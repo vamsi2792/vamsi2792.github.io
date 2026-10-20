@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vamsi Muppana — Software Engineer</title>
+  <meta name="description" content="Vamsi Muppana is a software engineer in New York building fast, accessible React and TypeScript products, with experience in GSAP animation, D3 data visualization and LLM-powered features. Press start to explore the résumé.">
+  <meta name="theme-color" content="#0b0d1a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3f0ff" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vamsi Muppana — Software Engineer">
+  <meta property="og:description" content="Fast, accessible React and TypeScript products. Currently at EarthQuest; previously Skyline Infrastructure.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved preferences before first paint to avoid a flash.
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      if (localStorage.getItem('crt') === '1') document.documentElement.classList.add('crt');
+    } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vamsi Muppana",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:mvamsi.2792@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US" },
+    "sameAs": ["https://github.com/vamsi2792", "https://www.linkedin.com/in/vamsi-muppana"],
+    "alumniOf": ["University at Albany, SUNY", "Gayatri Vidya Parishad College of Engineering"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="toasts" aria-hidden="true"></div>
+  <div id="fx" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Vamsi Muppana, home">
+        <span class="avatar" data-sprite="head"></span>
+        <span class="brand-name">VAMSI M.</span>
+      </a>
+      <p class="hud-stats" aria-hidden="true">LVL <b id="lvl">1</b> <span class="sep">·</span> XP <b id="xp">0000</b></p>
+      <nav id="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button id="crt" class="icon-btn txt-btn" type="button" aria-pressed="false" aria-label="Retro screen effect" title="Retro screen effect">CRT</button>
+        <button id="theme" class="icon-btn" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        </button>
+        <button id="menu" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="xp-track" aria-hidden="true"><div id="xpfill"></div></div>
+  </header>
+
+  <main id="main">
+    <!-- TITLE SCREEN -->
+    <section class="hero" id="top" data-level="1">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="blink-dot" aria-hidden="true"></span> PLAYER 1 READY</p>
+          <h1 id="name">Vamsi Muppana</h1>
+          <p class="role reveal">Software Engineer <span class="sep">·</span> New York, NY</p>
+          <p class="lead reveal">I build fast, accessible web products in React and TypeScript, with motion that stays smooth on mid-range phones. Lately that includes shipping LLM-powered features inside real products.</p>
+          <div class="cta reveal">
+            <a class="btn primary" href="#experience"><span class="play" aria-hidden="true">▶</span> Press start</a>
+            <a class="btn" href="Vamsi_Muppana_NYT.pdf" download>Download résumé</a>
+            <a class="btn ghost" href="mailto:mvamsi.2792@gmail.com">Email me</a>
+          </div>
+        </div>
+
+        <div class="stage-box reveal" aria-hidden="true">
+          <span class="coin c1" data-depth="26">$</span>
+          <span class="coin c2" data-depth="18">$</span>
+          <span class="coin c3" data-depth="32">$</span>
+          <div class="layer" data-depth="10">
+            <button class="jump" type="button" tabindex="-1" aria-hidden="true">
+              <span class="bob" data-sprite="full"></span>
+            </button>
+          </div>
+          <div class="platform"></div>
+          <p class="tag-line">PLAYER 1 · CLASS: SOFTWARE ENGINEER</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h2 class="panel-title reveal">Player stats</h2>
+        <dl class="stats reveal">
+          <div><dt>Largest Contentful Paint</dt><dd>−40%</dd></div>
+          <div><dt>Accessibility issues resolved</dt><dd>120+</dd></div>
+          <div><dt>Data points rendered smoothly</dt><dd>10K+</dd></div>
+          <div><dt>Front-end test coverage</dt><dd>80%</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- STAGE 1 -->
+    <section id="experience" aria-labelledby="h-exp" data-level="2">
+      <div class="wrap">
+        <p class="stage reveal">STAGE 1 · QUEST LOG</p>
+        <h2 id="h-exp" class="reveal">Experience</h2>
+
+        <article class="job panel reveal">
+          <header>
+            <div>
+              <p class="badge active">● In progress</p>
+              <h3>Software Engineer · EarthQuest</h3>
+              <p class="meta">Dec 2024 – Present</p>
+            </div>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li><li>TypeScript</li><li>Next.js</li><li>GSAP</li><li>Claude API</li><li>Playwright</li>
+            </ul>
+          </header>
+          <ul class="points">
+            <li>Built the game’s web client in React and TypeScript, with a reusable component library for quest logs, inventory and character sheets shared across web and mobile views.</li>
+            <li>Created character and combat animations with GSAP timelines and CSS keyframes, sticking to GPU-friendly transforms to hold a steady <strong>60 FPS</strong> on mid-range mobile devices.</li>
+            <li>Migrated the marketing and patch-notes site to Next.js with static generation and image optimization, cutting Largest Contentful Paint by <strong>40%</strong>.</li>
+            <li>Integrated the Claude API into NPC dialogue with a RAG layer over game lore, streaming responses into the UI and caching frequent prompts to stay in-world and responsive.</li>
+            <li>Set up AI-assisted code review and automated testing on GitHub Actions with Vitest and Playwright, raising front-end test coverage to <strong>80%</strong>.</li>
+          </ul>
+          <p class="reward"><span>Rewards</span> 60 FPS on mid-range phones · −40% LCP · 80% test coverage</p>
+        </article>
+
+        <article class="job panel reveal">
+          <header>
+            <div>
+              <p class="badge done">✔ Quest complete</p>
+              <h3>Software Engineer · Skyline Infrastructure</h3>
+              <p class="meta">Jun 2022 – Jul 2024</p>
+            </div>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li><li>TypeScript</li><li>D3.js</li><li>SASS</li><li>WCAG 2.1 AA</li>
+            </ul>
+          </header>
+          <ul class="points">
+            <li>Developed responsive, mobile-first interfaces for an infrastructure asset-monitoring platform using React, TypeScript and SASS modules, turning Figma mockups into production UI.</li>
+            <li>Led an accessibility pass toward WCAG 2.1 AA: semantic HTML5, ARIA roles, keyboard navigation and focus management, resolving <strong>120+</strong> issues flagged in axe audits.</li>
+            <li>Built interactive D3.js and SVG visualizations for project timelines and sensor readings, using list virtualization to render <strong>10K+</strong> data points without lag.</li>
+            <li>Refactored legacy jQuery pages into modular ES6+ components and standardized cross-browser testing, closing long-standing Safari layout bugs.</li>
+          </ul>
+          <p class="reward"><span>Rewards</span> 120+ accessibility issues resolved · 10K+ data points rendered smoothly</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STAGE 2 -->
+    <section id="projects" aria-labelledby="h-proj" data-level="3">
+      <div class="wrap">
+        <p class="stage reveal">STAGE 2 · SIDE QUESTS</p>
+        <h2 id="h-proj" class="reveal">Projects</h2>
+        <div class="cards">
+          <article class="card panel tilt reveal">
+            <p class="meta">2025 · Side quest</p>
+            <h3>AI-Powered Social Media Scheduler</h3>
+            <p>A drag-and-drop content calendar with live post previews that mirror each platform’s layout, and keyboard-accessible scheduling controls. Claude drafts captions and alt text from uploaded media, while a Node.js job queue publishes on schedule and retries failed platform API calls automatically.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Claude API</li><li>PostgreSQL</li>
+            </ul>
+            <a class="link" href="https://github.com/vamsi2792" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="card panel tilt reveal">
+            <p class="meta">2025 · Side quest</p>
+            <h3>Accessible UI Component Kit</h3>
+            <p>A library of 25+ accessible components (modals, tabs, carousels, tooltips) with SASS-based theming and interactive Storybook docs. Motion built with GSAP and CSS transitions respects <code>prefers-reduced-motion</code>, and automated axe and Playwright tests run across Chrome, Safari and Firefox in CI.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>React</li><li>TypeScript</li><li>SASS</li><li>GSAP</li><li>Storybook</li><li>Playwright</li>
+            </ul>
+            <a class="link" href="https://github.com/vamsi2792" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="card panel tilt reveal">
+            <p class="meta">2026 · Side quest · Python full stack</p>
+            <h3>TaskQuest</h3>
+            <p>A to-do list that levels you up. A FastAPI REST API on SQLAlchemy and SQLite with validated schemas, XP derived from completed tasks so it never drifts, and a vanilla JavaScript front end that renders user text safely. Covered by 21 pytest tests.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>JavaScript</li><li>pytest</li>
+            </ul>
+            <a class="link" href="https://github.com/vamsi2792/taskquest-fastapi" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="card panel tilt reveal">
+            <p class="meta">2026 · Side quest · Java full stack</p>
+            <h3>Bookshelf</h3>
+            <p>A reading-list tracker. A Spring Boot REST API with Spring Data JPA and H2, Bean Validation with consistent JSON errors, a business rule that only finished books can be rated, and a JavaScript front end. Covered by 11 MockMvc integration tests.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>Java</li><li>Spring Boot</li><li>JPA</li><li>H2</li><li>Maven</li><li>JUnit</li>
+            </ul>
+            <a class="link" href="https://github.com/vamsi2792/bookshelf-spring" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="card panel tilt reveal">
+            <p class="meta">2026 · Side quest · AI</p>
+            <h3>docs-qa-rag</h3>
+            <p>Ask questions about a folder of documents and get cited answers. Retrieval-augmented generation with a from-scratch BM25 search, Claude writing the answer from the retrieved passages, and an offline fallback when there is no API key. Covered by 29 tests.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>RAG</li><li>BM25</li><li>Claude API</li><li>pytest</li>
+            </ul>
+            <a class="link" href="https://github.com/vamsi2792/docs-qa-rag" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 3 -->
+    <section id="skills" aria-labelledby="h-skills" data-level="4">
+      <div class="wrap">
+        <p class="stage reveal">STAGE 3 · INVENTORY</p>
+        <h2 id="h-skills" class="reveal">Skills</h2>
+        <div class="skills">
+          <div class="slot panel reveal">
+            <h3>Languages</h3>
+            <ul class="tags"><li>JavaScript (ES6+)</li><li>TypeScript</li><li>HTML5</li><li>CSS3</li><li>SASS/SCSS</li><li>Python</li><li>SQL</li></ul>
+          </div>
+          <div class="slot panel reveal">
+            <h3>Frameworks &amp; libraries</h3>
+            <ul class="tags"><li>React</li><li>Next.js</li><li>GSAP</li><li>D3.js</li><li>Redux</li><li>Tailwind CSS</li><li>Node.js</li><li>Express</li></ul>
+          </div>
+          <div class="slot panel reveal">
+            <h3>Core concepts</h3>
+            <ul class="tags"><li>Responsive design</li><li>Accessibility (WCAG, ARIA)</li><li>Cross-browser compatibility</li><li>CSS animation</li><li>Core Web Vitals</li><li>Component architecture</li><li>Google Ad Manager</li></ul>
+          </div>
+          <div class="slot panel reveal">
+            <h3>Testing</h3>
+            <ul class="tags"><li>Jest</li><li>Vitest</li><li>Playwright</li><li>axe</li></ul>
+          </div>
+          <div class="slot panel reveal">
+            <h3>Databases</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>Firebase</li></ul>
+          </div>
+          <div class="slot panel reveal">
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="tags"><li>AWS (S3, CloudFront)</li><li>Vercel</li><li>Netlify</li><li>Docker</li><li>GitHub Actions</li><li>CI/CD</li></ul>
+          </div>
+          <div class="slot panel wide reveal">
+            <h3>Tools &amp; practices</h3>
+            <ul class="tags"><li>Git &amp; GitHub</li><li>Jira</li><li>Figma</li><li>Vite</li><li>Webpack</li><li>Storybook</li><li>Claude Code</li><li>GitHub Copilot</li><li>Code review</li><li>Agile/Scrum</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 4 -->
+    <section id="education" aria-labelledby="h-edu" data-level="5">
+      <div class="wrap">
+        <p class="stage reveal">STAGE 4 · TRAINING &amp; BADGES</p>
+        <h2 id="h-edu" class="reveal">Education &amp; certifications</h2>
+        <div class="cards two">
+          <article class="card panel reveal">
+            <h3>M.S. Computer Science (AI/ML)</h3>
+            <p>University at Albany, SUNY · Albany, NY</p>
+            <p class="meta">GPA 3.68 / 4.0</p>
+          </article>
+          <article class="card panel reveal">
+            <h3>B.S. Computer Science</h3>
+            <p>Gayatri Vidya Parishad College of Engineering · India</p>
+          </article>
+          <article class="card panel badge-card reveal">
+            <span class="medal" aria-hidden="true">★</span>
+            <div>
+              <h3>Oracle Certified Generative AI Professional</h3>
+              <a class="link" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=BF241864BD7BEE4679CC43CD3875019B1463C16D51D3C234725BD2E70DD438C7" target="_blank" rel="noopener">Verify credential <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="card panel badge-card reveal">
+            <span class="medal" aria-hidden="true">★</span>
+            <div>
+              <h3>Oracle Certified Data Science Professional</h3>
+              <a class="link" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=873C42D7ECF9C4A3B9E9F7CFB9DBDB3F72A6DCC028C8B5D4FDC887936566A47C" target="_blank" rel="noopener">Verify credential <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL STAGE -->
+    <section id="contact" class="contact" aria-labelledby="h-contact" data-level="MAX">
+      <div class="wrap">
+        <p class="stage reveal">FINAL STAGE · CONTINUE?</p>
+        <h2 id="h-contact" class="reveal">Let’s talk</h2>
+        <p class="continue reveal" aria-hidden="true">CONTINUE? <span id="count">9</span></p>
+        <p class="lead reveal">I’m open to software engineering roles where performance, accessibility and craft matter. The quickest way to reach me is email.</p>
+        <p class="reveal"><a class="big-mail" href="mailto:mvamsi.2792@gmail.com">mvamsi.2792@gmail.com</a></p>
+        <div class="cta reveal">
+          <a class="btn primary" href="mailto:mvamsi.2792@gmail.com"><span class="play" aria-hidden="true">●</span> Insert coin</a>
+          <a class="btn" href="https://github.com/vamsi2792" target="_blank" rel="noopener">GitHub <span class="sr">(opens in a new tab)</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/vamsi-muppana" target="_blank" rel="noopener">LinkedIn <span class="sr">(opens in a new tab)</span></a>
+          <a class="btn" href="Vamsi_Muppana_NYT.pdf" download>Résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Vamsi Muppana · Thanks for playing.</p>
+      <p class="hint">Psst… try ↑ ↑ ↓ ↓ ← → ← → B A</p>
+      <a href="#top">Back to title ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
