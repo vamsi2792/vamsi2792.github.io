@@ -112,7 +112,7 @@
   /* ---------- Section spy: nav highlight, level, achievements ---------- */
   var ACH = {
     experience: ['ACHIEVEMENT UNLOCKED', 'Quest Log opened: 2 roles to explore'],
-    projects: ['ACHIEVEMENT UNLOCKED', 'Side quests found: 5 projects to explore'],
+    projects: ['ACHIEVEMENT UNLOCKED', 'Side quests found: 4 projects to explore'],
     skills: ['ACHIEVEMENT UNLOCKED', 'Inventory opened: the full tech stack'],
     education: ['ACHIEVEMENT UNLOCKED', 'Training complete: M.S. CS + 2 Oracle badges'],
     contact: ['FINAL STAGE REACHED', 'Say hi: press the Insert coin button']
@@ -181,7 +181,7 @@
       .fromTo('.hero .ch', { opacity: 0, y: -18 }, { opacity: 1, y: 0, duration: 0.25, stagger: 0.05, ease: 'steps(3)' }, 0.1)
       .from('.stage-box .layer', { y: -160, duration: 0.9, ease: 'bounce.out' }, 0.5);
 
-    // Count-up for the player stats ("−40%", "120+", "10K+", "80%")
+    // Count-up for the player stats ("15K+", "−60%", "−45%", "60K+")
     document.querySelectorAll('.stats dd').forEach(function (dd) {
       var m = dd.textContent.match(/^(\D*)(\d+)(.*)$/);
       if (!m) return;

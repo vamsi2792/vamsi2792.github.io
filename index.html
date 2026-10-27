@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vamsi Muppana — Software Engineer</title>
-  <meta name="description" content="Vamsi Muppana is a software engineer in New York building fast, accessible React and TypeScript products, with experience in GSAP animation, D3 data visualization and LLM-powered features. Press start to explore the résumé.">
+  <meta name="description" content="Vamsi Muppana is a software engineer in New York building real-time game backends and cross-platform apps with Node.js, WebSockets, Redis, AWS and React, plus LLM-powered features. Open to relocation to San Francisco. Press start to explore the résumé.">
   <meta name="theme-color" content="#0b0d1a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f3f0ff" media="(prefers-color-scheme: light)">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vamsi Muppana — Software Engineer">
-  <meta property="og:description" content="Fast, accessible React and TypeScript products. Currently at EarthQuest; previously Skyline Infrastructure.">
+  <meta property="og:description" content="Real-time systems at scale: Node.js, WebSockets, Redis and AWS. Currently at EarthQuest; previously Skyline Infrastructure.">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,10 +81,10 @@
           <p class="eyebrow reveal"><span class="blink-dot" aria-hidden="true"></span> PLAYER 1 READY</p>
           <h1 id="name">Vamsi Muppana</h1>
           <p class="role reveal">Software Engineer <span class="sep">·</span> New York, NY</p>
-          <p class="lead reveal">I build fast, accessible web products in React and TypeScript, with motion that stays smooth on mid-range phones. Lately that includes shipping LLM-powered features inside real products.</p>
+          <p class="lead reveal">I build real-time backends and the apps on top of them: Node.js, WebSockets and Redis servers that hold 15K concurrent players, with React and React Native clients that stay smooth on mid-range phones. I also ship LLM-powered features in production. Open to relocation (San Francisco).</p>
           <div class="cta reveal">
             <a class="btn primary" href="#experience"><span class="play" aria-hidden="true">▶</span> Press start</a>
-            <a class="btn" href="Vamsi_Muppana_NYT.pdf" download>Download résumé</a>
+            <a class="btn" href="Vamsi_Muppana_MrBeast.pdf" download>Download résumé</a>
             <a class="btn ghost" href="mailto:mvamsi.2792@gmail.com">Email me</a>
           </div>
         </div>
@@ -106,10 +106,10 @@
       <div class="wrap">
         <h2 class="panel-title reveal">Player stats</h2>
         <dl class="stats reveal">
-          <div><dt>Largest Contentful Paint</dt><dd>−40%</dd></div>
-          <div><dt>Accessibility issues resolved</dt><dd>120+</dd></div>
-          <div><dt>Data points rendered smoothly</dt><dd>10K+</dd></div>
-          <div><dt>Front-end test coverage</dt><dd>80%</dd></div>
+          <div><dt>Concurrent players sustained</dt><dd>15K+</dd></div>
+          <div><dt>Database write load</dt><dd>−60%</dd></div>
+          <div><dt>First-token latency (prompt caching)</dt><dd>−45%</dd></div>
+          <div><dt>Daily API requests handled</dt><dd>60K+</dd></div>
         </dl>
       </div>
     </section>
@@ -128,17 +128,19 @@
               <p class="meta">Dec 2024 – Present</p>
             </div>
             <ul class="tags" aria-label="Technologies">
-              <li>React</li><li>TypeScript</li><li>Next.js</li><li>GSAP</li><li>Claude API</li><li>Playwright</li>
+              <li>Node.js</li><li>WebSockets</li><li>Redis</li><li>PostgreSQL</li><li>React Native</li><li>AWS ECS</li><li>Claude API</li>
             </ul>
           </header>
           <ul class="points">
-            <li>Built the game’s web client in React and TypeScript, with a reusable component library for quest logs, inventory and character sheets shared across web and mobile views.</li>
-            <li>Created character and combat animations with GSAP timelines and CSS keyframes, sticking to GPU-friendly transforms to hold a steady <strong>60 FPS</strong> on mid-range mobile devices.</li>
-            <li>Migrated the marketing and patch-notes site to Next.js with static generation and image optimization, cutting Largest Contentful Paint by <strong>40%</strong>.</li>
-            <li>Integrated the Claude API into NPC dialogue with a RAG layer over game lore, streaming responses into the UI and caching frequent prompts to stay in-world and responsive.</li>
-            <li>Set up AI-assisted code review and automated testing on GitHub Actions with Vitest and Playwright, raising front-end test coverage to <strong>80%</strong>.</li>
+            <li>Architected a stateful game server layer in Node.js and WebSockets with Redis pub/sub fan-out, sustaining <strong>15K</strong> concurrent players at p95 latency under <strong>80ms</strong>.</li>
+            <li>Built real-time leaderboards on Redis sorted sets with write-behind batching to PostgreSQL, cutting database write load by <strong>60%</strong> during spike-driven traffic events.</li>
+            <li>Shipped a live spectator mode streaming HLS through AWS IVS to React and React Native clients, syncing in-game events to playback using timed metadata cues.</li>
+            <li>Integrated the Claude API into NPC dialogue with a RAG pipeline over pgvector-indexed game lore, streaming tokens and cutting first-token latency <strong>45%</strong> via prompt caching.</li>
+            <li>Developed cross-platform game UI and in-game messaging in React, TypeScript and React Native with Zustand state, holding <strong>60 FPS</strong> interactions on mid-range mobile devices.</li>
+            <li>Drove AI-native delivery using Claude Code and Cursor agents for scaffolding, refactors and test generation, raising unit test coverage to <strong>85%</strong> across core game services.</li>
+            <li>Owned features end to end on AWS ECS with Docker and GitHub Actions, running k6 load tests at <strong>10x</strong> burst traffic before releases and leading production incident follow-ups.</li>
           </ul>
-          <p class="reward"><span>Rewards</span> 60 FPS on mid-range phones · −40% LCP · 80% test coverage</p>
+          <p class="reward"><span>Rewards</span> 15K concurrent players · −60% DB writes · −45% first-token latency · 85% test coverage</p>
         </article>
 
         <article class="job panel reveal">
@@ -149,16 +151,19 @@
               <p class="meta">Jun 2022 – Jul 2024</p>
             </div>
             <ul class="tags" aria-label="Technologies">
-              <li>React</li><li>TypeScript</li><li>D3.js</li><li>SASS</li><li>WCAG 2.1 AA</li>
+              <li>Node.js</li><li>GraphQL</li><li>Kafka</li><li>Spring Boot</li><li>Redis</li><li>React</li><li>AWS</li>
             </ul>
           </header>
           <ul class="points">
-            <li>Developed responsive, mobile-first interfaces for an infrastructure asset-monitoring platform using React, TypeScript and SASS modules, turning Figma mockups into production UI.</li>
-            <li>Led an accessibility pass toward WCAG 2.1 AA: semantic HTML5, ARIA roles, keyboard navigation and focus management, resolving <strong>120+</strong> issues flagged in axe audits.</li>
-            <li>Built interactive D3.js and SVG visualizations for project timelines and sensor readings, using list virtualization to render <strong>10K+</strong> data points without lag.</li>
-            <li>Refactored legacy jQuery pages into modular ES6+ components and standardized cross-browser testing, closing long-standing Safari layout bugs.</li>
+            <li>Built REST and GraphQL APIs in Node.js and TypeScript for a customer-facing service platform, handling <strong>60K+</strong> daily requests with p95 response times under <strong>150ms</strong>.</li>
+            <li>Developed a real-time notification service with Socket.IO and Redis pub/sub, pushing live status updates to <strong>20K+</strong> users and replacing 30-second polling on web clients.</li>
+            <li>Implemented Kafka-based event processing in Java Spring Boot to decouple order updates from billing, enabling independent scaling and idempotent retries on failure.</li>
+            <li>Engineered React dashboards with virtualized lists and memoized components to render <strong>10K+</strong> live records smoothly, cutting initial load time <strong>40%</strong> through code splitting.</li>
+            <li>Added Redis caching with TTL-based invalidation for read-heavy endpoints, lowering database pressure during peak hours and improving API throughput by <strong>2.5x</strong>.</li>
+            <li>Containerized services with Docker and built GitHub Actions CI/CD pipelines with automated tests and staged AWS rollouts, reducing deployment time from <strong>45 to 12 minutes</strong>.</li>
+            <li>Wrote unit and integration tests with Jest and Supertest to reach <strong>80%</strong> coverage, and added structured logging with Datadog dashboards to speed up production incident triage.</li>
           </ul>
-          <p class="reward"><span>Rewards</span> 120+ accessibility issues resolved · 10K+ data points rendered smoothly</p>
+          <p class="reward"><span>Rewards</span> 60K+ daily requests · 20K+ live users · 2.5x API throughput · deploys 45 → 12 min</p>
         </article>
       </div>
     </section>
@@ -171,24 +176,13 @@
         <div class="cards">
           <article class="card panel tilt reveal">
             <p class="meta">2025 · Side quest</p>
-            <h3>AI-Powered Social Media Scheduler</h3>
-            <p>A drag-and-drop content calendar with live post previews that mirror each platform’s layout, and keyboard-accessible scheduling controls. Claude drafts captions and alt text from uploaded media, while a Node.js job queue publishes on schedule and retries failed platform API calls automatically.</p>
+            <h3>AI-Powered Social Media Scheduling Tool</h3>
+            <p>A creator-focused scheduler where the Claude API drafts platform-specific captions and hooks, with BullMQ job queues publishing posts on time across 4 platforms. Live engagement metrics stream to a Next.js dashboard over WebSockets, with Redis-backed aggregation updating counters in real time without polling the database.</p>
             <ul class="tags" aria-label="Technologies">
-              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Claude API</li><li>PostgreSQL</li>
+              <li>Next.js</li><li>Node.js</li><li>Claude API</li><li>PostgreSQL</li><li>Redis</li><li>WebSockets</li><li>BullMQ</li>
             </ul>
             <a class="link" href="https://github.com/vamsi2792" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
           </article>
-
-          <article class="card panel tilt reveal">
-            <p class="meta">2025 · Side quest</p>
-            <h3>Accessible UI Component Kit</h3>
-            <p>A library of 25+ accessible components (modals, tabs, carousels, tooltips) with SASS-based theming and interactive Storybook docs. Motion built with GSAP and CSS transitions respects <code>prefers-reduced-motion</code>, and automated axe and Playwright tests run across Chrome, Safari and Firefox in CI.</p>
-            <ul class="tags" aria-label="Technologies">
-              <li>React</li><li>TypeScript</li><li>SASS</li><li>GSAP</li><li>Storybook</li><li>Playwright</li>
-            </ul>
-            <a class="link" href="https://github.com/vamsi2792" target="_blank" rel="noopener">View on GitHub <span class="sr">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
-          </article>
-
           <article class="card panel tilt reveal">
             <p class="meta">2026 · Side quest · Python full stack</p>
             <h3>TaskQuest</h3>
@@ -230,31 +224,27 @@
         <div class="skills">
           <div class="slot panel reveal">
             <h3>Languages</h3>
-            <ul class="tags"><li>JavaScript (ES6+)</li><li>TypeScript</li><li>HTML5</li><li>CSS3</li><li>SASS/SCSS</li><li>Python</li><li>SQL</li></ul>
+            <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>Python</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
           </div>
           <div class="slot panel reveal">
             <h3>Frameworks &amp; libraries</h3>
-            <ul class="tags"><li>React</li><li>Next.js</li><li>GSAP</li><li>D3.js</li><li>Redux</li><li>Tailwind CSS</li><li>Node.js</li><li>Express</li></ul>
-          </div>
-          <div class="slot panel reveal">
-            <h3>Core concepts</h3>
-            <ul class="tags"><li>Responsive design</li><li>Accessibility (WCAG, ARIA)</li><li>Cross-browser compatibility</li><li>CSS animation</li><li>Core Web Vitals</li><li>Component architecture</li><li>Google Ad Manager</li></ul>
-          </div>
-          <div class="slot panel reveal">
-            <h3>Testing</h3>
-            <ul class="tags"><li>Jest</li><li>Vitest</li><li>Playwright</li><li>axe</li></ul>
+            <ul class="tags"><li>React</li><li>React Native</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Socket.IO</li><li>Spring Boot</li><li>GraphQL</li></ul>
           </div>
           <div class="slot panel reveal">
             <h3>Databases</h3>
-            <ul class="tags"><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>Firebase</li></ul>
+            <ul class="tags"><li>PostgreSQL</li><li>Redis</li><li>MongoDB</li><li>DynamoDB</li><li>pgvector</li></ul>
           </div>
           <div class="slot panel reveal">
             <h3>Cloud &amp; DevOps</h3>
-            <ul class="tags"><li>AWS (S3, CloudFront)</li><li>Vercel</li><li>Netlify</li><li>Docker</li><li>GitHub Actions</li><li>CI/CD</li></ul>
+            <ul class="tags"><li>AWS (ECS, Lambda, S3)</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>GitHub Actions</li><li>CI/CD</li></ul>
           </div>
           <div class="slot panel wide reveal">
             <h3>Tools &amp; practices</h3>
-            <ul class="tags"><li>Git &amp; GitHub</li><li>Jira</li><li>Figma</li><li>Vite</li><li>Webpack</li><li>Storybook</li><li>Claude Code</li><li>GitHub Copilot</li><li>Code review</li><li>Agile/Scrum</li></ul>
+            <ul class="tags"><li>Claude Code</li><li>Cursor</li><li>AI coding agents</li><li>Claude API</li><li>AI-assisted QA</li><li>Playwright</li><li>Jest</li><li>Datadog</li><li>Git</li><li>Agile</li></ul>
+          </div>
+          <div class="slot panel wide reveal">
+            <h3>Core concepts</h3>
+            <ul class="tags"><li>Real-time systems</li><li>WebSockets</li><li>Live streaming (HLS, RTMP)</li><li>Leaderboards</li><li>Gaming backend services</li><li>Distributed systems</li><li>Load balancing</li><li>Microservices</li><li>System design</li></ul>
           </div>
         </div>
       </div>
@@ -299,13 +289,13 @@
         <p class="stage reveal">FINAL STAGE · CONTINUE?</p>
         <h2 id="h-contact" class="reveal">Let’s talk</h2>
         <p class="continue reveal" aria-hidden="true">CONTINUE? <span id="count">9</span></p>
-        <p class="lead reveal">I’m open to software engineering roles where performance, accessibility and craft matter. The quickest way to reach me is email.</p>
+        <p class="lead reveal">I’m open to software engineering roles, including relocating to San Francisco, where real-time systems, performance and craft matter. The quickest way to reach me is email.</p>
         <p class="reveal"><a class="big-mail" href="mailto:mvamsi.2792@gmail.com">mvamsi.2792@gmail.com</a></p>
         <div class="cta reveal">
           <a class="btn primary" href="mailto:mvamsi.2792@gmail.com"><span class="play" aria-hidden="true">●</span> Insert coin</a>
           <a class="btn" href="https://github.com/vamsi2792" target="_blank" rel="noopener">GitHub <span class="sr">(opens in a new tab)</span></a>
           <a class="btn" href="https://www.linkedin.com/in/vamsi-muppana" target="_blank" rel="noopener">LinkedIn <span class="sr">(opens in a new tab)</span></a>
-          <a class="btn" href="Vamsi_Muppana_NYT.pdf" download>Résumé (PDF)</a>
+          <a class="btn" href="Vamsi_Muppana_MrBeast.pdf" download>Résumé (PDF)</a>
         </div>
       </div>
     </section>
